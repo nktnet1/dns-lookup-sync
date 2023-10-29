@@ -1,0 +1,48 @@
+{
+  "name": "dns-lookup-sync",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nktnet1/dns-lookup-sync"
+  },
+  "version": "0.0.0",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "scripts": {
+    "test": "jest",
+    "tc": "jest --coverage",
+    "lint": "eslint './**/*.ts'",
+    "lf": "eslint --fix './**/*.ts'",
+    "tsc": "tsc --noEmit",
+    "build": "rm -rf dist && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "dns",
+    "sync",
+    "synchronous",
+    "lookup",
+    "dns-lookup",
+    "dns-sync",
+    "comp1531"
+  ],
+  "author": "Khiet Tam Nguyen",
+  "license": "MIT",
+  "description": "Rewire private modules for use within Jest.",
+  "devDependencies": {
+    "@types/jest": "^29.5.6",
+    "@types/node": "^20.8.7",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
+    "eslint": "^8.51.0",
+    "eslint-plugin-jest": "^27.4.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
