@@ -11,11 +11,10 @@
     "noUnusedLocals": true,
     "sourceMap": true,
     "strict": true,
-    "outDir": "dist/esm",
-    "skipLibCheck": true,
-    "target": "es6"
+    "outDir": "dist",
+    "target": "ES5"
   },
   "include": [
-    "src/**/*.ts", "scripts/dns-lookup-sync-script.js"
+    "src/**/*.ts"
   ]
 }

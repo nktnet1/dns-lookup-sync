@@ -4,12 +4,11 @@
     "type": "git",
     "url": "https://github.com/nktnet1/dns-lookup-sync"
   },
-  "version": "0.0.0",
+  "version": "0.0.2",
   "files": [
-    "dist"
+    "dist", "scripts"
   ],
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "tc": "jest --coverage",
@@ -28,11 +27,13 @@
     "lookup",
     "dns-lookup",
     "dns-sync",
+    "IPv4",
+    "IPv6",
     "comp1531"
   ],
   "author": "Khiet Tam Nguyen",
   "license": "MIT",
-  "description": "Rewire private modules for use within Jest.",
+  "description": "Synchronous version of dnsPromises.lookup -  Resolves a host name (e.g. 'nodejs.org') into the first found A (IPv4) or AAAA (IPv6) record",
   "devDependencies": {
     "@types/jest": "^29.5.6",
     "@types/node": "^20.8.7",
