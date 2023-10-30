@@ -229,3 +229,8 @@ DEALINGS IN THE SOFTWARE.
 There are currently no known limitations.
 
 ## 5. Caveats
+
+This module was inspired by
+[dns-sync](https://github.com/skoranga/node-dns-sync), although focuses
+primarily on providing the most up-to-date version of
+[dnsPromises.lookup](https://nodejs.org/api/dns.html#dnspromiseslookuphostname-options) in a synchronous manner.
