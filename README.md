@@ -6,7 +6,7 @@
 &nbsp;
 [![codecov](https://codecov.io/gh/nktnet1/dns-lookup-sync/branch/main/graph/badge.svg?token=RAC7SKJTGU)](https://codecov.io/gh/nktnet1/dns-lookup-sync)
 &nbsp;
-[![Maintainability](https://api.codeclimate.com/v1/badges/aaae5cf33d58299ed722/maintainability)](https://codeclimate.com/github/nktnet1/dns-lookup-sync/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/46c9b884916b726d91ed/maintainability)](https://codeclimate.com/github/nktnet1/dns-lookup-sync/maintainability)
 &nbsp;
 [![Snyk Security](https://snyk.io/test/github/nktnet1/dns-lookup-sync/badge.svg)](https://snyk.io/test/github/nktnet1/dns-lookup-sync)
 &nbsp;
@@ -24,11 +24,11 @@
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nktnet1_dns-lookup-sync&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=nktnet1_dns-lookup-sync)
 &nbsp;
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/65161ae4d1c646ed83c9ef47b0a11473)](https://app.codacy.com/gh/nktnet1/dns-lookup-sync/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/b56caf9395e743deaccd3a0a67d22819)](https://app.codacy.com/gh/nktnet1/dns-lookup-sync/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 &nbsp;
-[![DeepSource](https://app.deepsource.com/gh/nktnet1/dns-lookup-sync.svg/?label=active+issues&show_trend=true&token=r1frerF1-N2Mhrc7ZXIC1uNa)](https://app.deepsource.com/gh/nktnet1/dns-lookup-sync/)
+[![DeepSource](https://app.deepsource.com/gh/nktnet1/dns-lookup-sync.svg/?label=active+issues&show_trend=true&token=_1JuBM2nzzo4t4DqFTdPMwwo)](https://app.deepsource.com/gh/nktnet1/dns-lookup-sync/)
 &nbsp;
-[![codebeat badge](https://codebeat.co/badges/acc44573-9938-4a14-bc41-7eb6a58dffbb)](https://codebeat.co/projects/github-com-nktnet1-dns-lookup-sync-main)
+[![codebeat badge](https://codebeat.co/badges/20b443c6-3784-4b63-99de-c69f0701a633)](https://codebeat.co/projects/github-com-nktnet1-dns-lookup-sync-main)
 &nbsp;
 [![GitHub stars](https://img.shields.io/github/stars/nktnet1/dns-lookup-sync.svg?style=social)](https://github.com/nktnet1/dns-lookup-sync/stargazers)
 
