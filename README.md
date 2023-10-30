@@ -16,7 +16,7 @@
 &nbsp;
 [![install size](https://packagephobia.com/badge?p=dns-lookup-sync)](https://packagephobia.com/result?p=dns-lookup-sync)
 &nbsp;
-[![Depfu Dependencies](https://badges.depfu.com/badges/6c4074c4d23ad57ee2bfd9ff90456090/overview.svg)](https://depfu.com/github/nktnet1/dns-lookup-sync?project_id=39032)
+[![Depfu](https://badges.depfu.com/badges/8f864f96bde332adb2a53fb30c4832a6/overview.svg)](https://depfu.com/github/nktnet1/dns-lookup-sync?project_id=39390)
 &nbsp;
 [![NPM License](https://img.shields.io/npm/l/dns-lookup-sync)](https://opensource.org/license/mit/)
 &nbsp;
