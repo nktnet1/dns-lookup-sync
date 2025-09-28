@@ -1,6 +1,6 @@
+import { execSync } from 'child_process';
 import { LookupAddress, LookupAllOptions, LookupOneOptions, LookupOptions } from 'dns';
 import path from 'path';
-import { execSync } from 'child_process';
 
 const errorPrefix = 'DNSLookupSyncError:';
 const scriptRelativePath = '../scripts/dns-lookup-sync-script.js';
@@ -16,7 +16,7 @@ const scriptRelativePath = '../scripts/dns-lookup-sync-script.js';
 const createError = (
   message: string,
   hostname: string,
-  options?: number | LookupOptions
+  options?: number | LookupOptions,
 ): Error => {
   return new Error(`
 ================================================================================
@@ -42,22 +42,20 @@ Please double check the documentation here:
  * @returns {LookupAddress | LookupAddress[]} a single address if options.all
  * is false, otherwise a list of addresses
  */
-function dnsLookupSync(hostname:
-   string,
-   options?: number | LookupOneOptions
-): LookupAddress;
+function dnsLookupSync(hostname: string, options?: number | LookupOneOptions): LookupAddress;
 function dnsLookupSync(
   hostname: string,
-  options: LookupAllOptions | LookupOptions
+  options: LookupAllOptions | LookupOptions,
 ): LookupAddress[];
 function dnsLookupSync(
   hostname: string,
-  options?: number | LookupOptions
+  options?: number | LookupOptions,
 ): LookupAddress | LookupAddress[] {
   const scriptPath = path.join(__dirname, scriptRelativePath);
-  const cmd = options === undefined
-    ? `'${process.execPath}' '${scriptPath}' '${hostname}'`
-    : `'${process.execPath}' '${scriptPath}' '${hostname}' '${JSON.stringify(options)}'`;
+  const cmd =
+    options === undefined
+      ? `'${process.execPath}' '${scriptPath}' '${hostname}'`
+      : `'${process.execPath}' '${scriptPath}' '${hostname}' '${JSON.stringify(options)}'`;
   try {
     const results = execSync(cmd, { encoding: 'utf-8' }).trim();
     if (results.startsWith(errorPrefix)) {
