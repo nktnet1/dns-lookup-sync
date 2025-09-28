@@ -2,7 +2,8 @@ import { expect, test } from 'vitest';
 import dnsLookupSync from '../src';
 
 test('Undefined host', () => {
-  expect(() => dnsLookupSync(undefined as any)).toThrow(Error);
+  // @ts-expect-error invalid argument
+  expect(() => dnsLookupSync(undefined)).toThrow(Error);
 });
 
 test('Unknown host', () => {
