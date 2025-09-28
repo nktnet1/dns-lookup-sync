@@ -1,7 +1,9 @@
+import { expect, test } from 'vitest';
 import dnsLookupSync from '../src';
 
 test('Undefined host', () => {
-  expect(() => dnsLookupSync(undefined as any)).toThrow(Error);
+  // @ts-expect-error invalid argument
+  expect(() => dnsLookupSync(undefined)).toThrow(Error);
 });
 
 test('Unknown host', () => {
@@ -21,9 +23,13 @@ test('Invalid options.all', () => {
 });
 
 test('Invalid options.verbatim', () => {
-  expect(() => dnsLookupSync('localhost', { verbatim: 'invalid' as unknown as boolean })).toThrow(Error);
+  expect(() => dnsLookupSync('localhost', { verbatim: 'invalid' as unknown as boolean })).toThrow(
+    Error,
+  );
 });
 
 test('Invalid options.hints', () => {
-  expect(() => dnsLookupSync('localhost', { hints: 'invalid' as unknown as number })).toThrow(Error);
+  expect(() => dnsLookupSync('localhost', { hints: 'invalid' as unknown as number })).toThrow(
+    Error,
+  );
 });
