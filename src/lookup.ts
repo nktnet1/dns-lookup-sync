@@ -62,8 +62,12 @@ function dnsLookupSync(
       throw new Error(results);
     }
     return JSON.parse(results);
-  } catch (error: any) {
-    throw createError(error.message, hostname, options);
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      throw createError(error.message, hostname, options);
+    } else {
+      throw createError(`Unknown error: ${error}`, hostname, options);
+    }
   }
 }
 
