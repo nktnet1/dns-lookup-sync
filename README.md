@@ -28,8 +28,6 @@
 &nbsp;
 [![DeepSource](https://app.deepsource.com/gh/nktnet1/dns-lookup-sync.svg/?label=active+issues&show_trend=true&token=_1JuBM2nzzo4t4DqFTdPMwwo)](https://app.deepsource.com/gh/nktnet1/dns-lookup-sync/)
 &nbsp;
-[![codebeat badge](https://codebeat.co/badges/20b443c6-3784-4b63-99de-c69f0701a633)](https://codebeat.co/projects/github-com-nktnet1-dns-lookup-sync-main)
-&nbsp;
 [![GitHub stars](https://img.shields.io/github/stars/nktnet1/dns-lookup-sync.svg?style=social)](https://github.com/nktnet1/dns-lookup-sync/stargazers)
 
 [![Downloads Total](https://badgen.net/npm/dt/dns-lookup-sync)](https://moiva.io/?npm=dns-lookup-sync)
