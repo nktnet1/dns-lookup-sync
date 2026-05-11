@@ -1,4 +1,4 @@
-import { execSync } from 'child_process';
+import { execFileSync } from 'child_process';
 import { LookupAddress, LookupAllOptions, LookupOneOptions, LookupOptions } from 'dns';
 import path from 'path';
 
@@ -52,12 +52,14 @@ function dnsLookupSync(
   options?: number | LookupOptions,
 ): LookupAddress | LookupAddress[] {
   const scriptPath = path.join(__dirname, scriptRelativePath);
-  const cmd =
+
+  const args =
     options === undefined
-      ? `'${process.execPath}' '${scriptPath}' '${hostname}'`
-      : `'${process.execPath}' '${scriptPath}' '${hostname}' '${JSON.stringify(options)}'`;
+      ? [scriptPath, hostname]
+      : [scriptPath, hostname, JSON.stringify(options)];
+
   try {
-    const results = execSync(cmd, { encoding: 'utf-8' }).trim();
+    const results = execFileSync(process.execPath, args, { encoding: 'utf-8' }).trim();
     if (results.startsWith(errorPrefix)) {
       throw new Error(results);
     }
