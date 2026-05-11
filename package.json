@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/nktnet1/dns-lookup-sync"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "files": [
     "dist",
     "scripts"
