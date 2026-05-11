@@ -1,5 +1,6 @@
 {
   "name": "dns-lookup-sync",
+  "type": "module",
   "author": "Khiet Tam Nguyen",
   "license": "MIT",
   "description": "Synchronous version of dnsPromises.lookup -  Resolves a host name (e.g. 'nodejs.org') into the first found A (IPv4) or AAAA (IPv6) record",

@@ -3,7 +3,7 @@ import { LookupAddress, LookupAllOptions, LookupOneOptions, LookupOptions } from
 import path from 'path';
 
 const errorPrefix = 'DNSLookupSyncError:';
-const scriptRelativePath = '../scripts/dns-lookup-sync-script.js';
+const scriptRelativePath = '../scripts/dns-lookup-sync-script.cjs';
 
 /**
  * Creates a new error instance with a customised error message

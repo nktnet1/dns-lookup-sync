@@ -1,4 +1,7 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
+
 const errorPrefix = 'DNSLookupSyncError:';
+const path = require('path');
 
 /**
  * Parse the command line arguments into hostname and Lookup Options
@@ -7,8 +10,8 @@ const errorPrefix = 'DNSLookupSyncError:';
  * to pass into dns.promises.lookup
  */
 const parseArguments = () => {
-  const basename = require('path').basename(__filename);
-  const index = process.argv.findIndex(arg => arg.includes(basename));
+  const basename = path.basename(__filename);
+  const index = process.argv.findIndex((arg) => arg.includes(basename));
 
   const hostname = process.argv[index + 1];
   if (hostname === undefined) {
@@ -21,7 +24,9 @@ const parseArguments = () => {
     try {
       options = JSON.parse(optionString);
     } catch (error) {
-      throw new Error(`${errorPrefix} cannot parse DNS options - ${error.message}`);
+      throw new Error(`${errorPrefix} cannot parse DNS options - ${error.message}`, {
+        cause: error,
+      });
     }
   }
   return { hostname, options };
