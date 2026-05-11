@@ -6,15 +6,16 @@
     "esModuleInterop": true,
     "lib": ["es5", "es2015", "esnext", "dom"],
     "types": ["node"],
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "sourceMap": true,
     "strict": true,
-    "outDir": "dist",
-    "target": "ES5"
+    "rootDir": "./",
+    "target": "esnext"
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "tests/**/*.ts"
   ]
 }
